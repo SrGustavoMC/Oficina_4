@@ -20,7 +20,7 @@ import SuportePage from './paginas/SuportePage';
 function App() {
   const [itensDoCarrinho, setItensDoCarrinho] = useState([]);
   
-  // Lógica do carrinho (continua a mesma)
+  // Lógica do carrinho 
   const handleAdicionarAoCarrinho = (produto) => {
     if (!itensDoCarrinho.find(item => item.id === produto.id)) {
       setItensDoCarrinho(atuais => [...atuais, produto]);

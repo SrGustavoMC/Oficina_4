@@ -1,6 +1,4 @@
-/* src/App.css */
 
-/* --- VARIÁVEIS DE COR --- */
 :root {
   --blood-red: #d10000;
   --dark-red: #8b0000;
@@ -9,7 +7,7 @@
   --neon-green: #0ddc17;
 }
 
-/* --- ESTILOS GLOBAIS --- */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -191,7 +189,7 @@ main {
   font-size: 1.2em;
   margin-bottom: 10px;
   color: #fff;
-  min-height: 50px; /* Garante alinhamento */
+  min-height: 50px; 
 }
 
 .game-info .descricao-produto {
@@ -205,7 +203,7 @@ main {
   font-weight: bold;
   color: var(--neon-green);
   text-shadow: 0 0 5px var(--neon-green);
-  margin-top: auto; /* Empurra o preço para baixo */
+  margin-top: auto; 
 }
 
 .price .old-price {
@@ -309,7 +307,7 @@ footer {
   color: #888;
 }
 
-/* ... (adicione aqui os estilos do modal do carrinho e do suporte) ... */
+/* Carrinho */
 .cart-item {
   display: flex;
   align-items: center; /* Alinha tudo verticalmente */
@@ -328,7 +326,7 @@ footer {
 
 /* O container do nome e do preço */
 .cart-item-info {
-  flex-grow: 1; /* Faz o nome/preço ocupar o espaço disponível */
+  flex-grow: 1; 
 }
 
 /* O nome do jogo */
@@ -348,15 +346,15 @@ footer {
 
 /* O botão de retirar */
 .cart-item .remove-item {
-  /* Os estilos do botão que você já tem devem funcionar bem aqui */
+  
   background: #444;
   padding: 6px 12px;
   font-size: 0.8em;
-  /* etc... */
+  
 }
 .suporte-content {
   display: grid;
-  grid-template-columns: 2fr 1.5fr; /* Coluna da esquerda maior que a da direita */
+  grid-template-columns: 2fr 1.5fr; 
   gap: 40px;
 }
 
@@ -387,12 +385,7 @@ footer {
   transition: transform 0.3s;
 }
 
-/* No futuro, com JS, podemos girar a seta quando o item estiver aberto */
-/*
-.faq-item.open::after {
-  transform: scaleY(-0.7);
-}
-*/
+
 
 .contato-coluna {
   display: flex;
@@ -446,8 +439,7 @@ footer {
 /* --- RESPONSIVIDADE PARA A PÁGINA DE SUPORTE --- */
 @media (max-width: 900px) {
   .suporte-content {
-  /* Removemos o 'display: grid' para ter uma coluna só */
-  max-width: 800px; /* Define uma largura máxima para não ficar muito largo */
-  margin: 0 auto; /* Este comando centra o bloco na página */
+  max-width: 800px; 
+  margin: 0 auto; 
 }
 }

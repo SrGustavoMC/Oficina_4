@@ -1,11 +1,11 @@
-// src/componentes/header.js
+
 import React, { useState } from 'react'; // 1. Importe o useState
 import { Link } from 'react-router-dom';
 import Carrinho from './Carrinho'; // 2. Importe o Carrinho aqui
 
-// 3. O Header agora recebe todos os dados e funções do carrinho
+
 function Header({ quantidadeItens, itensDoCarrinho, onRemoverDoCarrinho, total }) { 
-  // 4. Criamos um estado local para controlar a visibilidade do dropdown
+  
   const [dropdownVisivel, setDropdownVisivel] = useState(false);
 
   // Função para alternar a visibilidade
@@ -15,7 +15,7 @@ function Header({ quantidadeItens, itensDoCarrinho, onRemoverDoCarrinho, total }
 
   return (
     <header className="cabecalho-principal">
-      {/* ... (código do logo e nav não muda) ... */}
+      {}
       <div className="logo-container">
         <Link to="/" className="link-logo">
           <h1>Fatality Shop</h1>
@@ -39,14 +39,14 @@ function Header({ quantidadeItens, itensDoCarrinho, onRemoverDoCarrinho, total }
         </ul>
       </nav>
 
-      {/* 5. O container do ícone do carrinho agora controla o dropdown */}
+      {}
       <div id="cart-icon-container">
         <div id="cart-icon" onClick={toggleDropdown}>
           🛒
           <span id="cart-count">{quantidadeItens}</span>
         </div>
         
-        {/* 6. O carrinho agora é renderizado aqui dentro */}
+        {}
         <Carrinho 
           visivel={dropdownVisivel}
           itens={itensDoCarrinho}

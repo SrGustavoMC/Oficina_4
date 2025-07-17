@@ -1,13 +1,13 @@
-// src/components/carrinho.js
+
 import React from 'react';
 
 function Carrinho({ itens, visivel, onEsconderCarrinho, onRemoverDoCarrinho, total }) {
-  // Se não estiver visível, não renderiza nada
+ 
   if (!visivel) {
     return null;
   }
 
-  // A estrutura de um modal simples
+ 
   return (
     <div id="cart-modal">
       <div className="cart-modal-content">
@@ -21,7 +21,7 @@ function Carrinho({ itens, visivel, onEsconderCarrinho, onRemoverDoCarrinho, tot
           ) : (
             itens.map(item => (
   <li key={item.id} className="cart-item">
-    {/* IMAGEM ADICIONADA AQUI */}
+    {}
     <img src={item.imagem} alt={item.nome} className="cart-item-imagem" />
 
     <div className="cart-item-info">

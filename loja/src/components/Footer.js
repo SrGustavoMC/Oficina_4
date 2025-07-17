@@ -23,7 +23,7 @@ function Footer() {
         </div>
         <div className="footer-section redes-sociais">
           <h3>redes sociais</h3>
-          {/* Adicione seus ícones de redes sociais aqui */}
+          {}
           <p>contato@fatalityshop.com.br</p>
         </div>
       </div>
